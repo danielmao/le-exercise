@@ -16,7 +16,7 @@ export const initReducer = () => {
   } as Order;
 }
 
-export const reducer = (state: Order, action: { type: string, payload: any }): Order => {
+export const reducer = (state: Order, action: { type: string, payload?: any }): Order => {
 
   switch (action.type) {
     case orderActions.create:
